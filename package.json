@@ -1,6 +1,6 @@
 {
   "name": "@yingpengsha/vue-jsx-runtime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
   "description": "Vue 3 JSX Runtime",
