@@ -1,1 +1,11 @@
-export default () => console.log('Welcome to use this template!')
+import { Fragment } from 'vue'
+import { jsx, jsxs, jsxDev } from './jsx'
+import { JSX } from './type'
+
+export {
+  Fragment,
+  jsx,
+  jsxs,
+  jsxDev,
+  JSX
+}

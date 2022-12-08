@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES2015",
+    "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -11,10 +11,23 @@
     "checkJs": true,
     "resolveJsonModule": true,
     "baseUrl": "./",
+    "declaration": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     }
   },
+  "include": [
+    "./global.d.ts",
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules",
     "dist"
