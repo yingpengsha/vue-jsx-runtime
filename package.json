@@ -1,0 +1,44 @@
+{
+  "name": "@yingpengsha/vue-jsx-runtime",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Pengsha Ying <yingfusheng@foxmail.com>",
+  "description": "Vue 3 JSX Runtime",
+  "repository": "git@github.com:yingpengsha/vue-jsx-runtime.git",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  },
+  "scripts": {
+    "dev": "tsup --watch --sourcemap",
+    "build": "tsup",
+    "release": "bump --commit --push --tag && pnpm publish",
+    "reset": "rimraf ./node_modules && pnpm install",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "rimraf": "^3.0.2",
+    "tsup": "^5.12.9",
+    "typescript": "^4.9.4"
+  }
+}
