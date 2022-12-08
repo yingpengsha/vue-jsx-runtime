@@ -11,7 +11,25 @@
   "files": [
     "dist"
   ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts"
+      ],
+      "jsx-runtime": [
+        "./dist/index.d.ts"
+      ],
+      "jsx-dev-runtime": [
+        "./dist/index.d.ts"
+      ]
+    }
+  },
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
     "./jsx-runtime": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
