@@ -259,3 +259,4 @@ export function jsx (
 
 export const jsxs = jsx
 export const jsxDev = jsx
+export const jsxDEV = jsx

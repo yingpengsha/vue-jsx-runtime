@@ -1,5 +1,5 @@
 import { Fragment } from 'vue'
-import { jsx, jsxs, jsxDev } from './jsx'
+import { jsx, jsxs, jsxDev, jsxDEV } from './jsx'
 import { JSX } from './type'
 
 export {
@@ -7,5 +7,6 @@ export {
   jsx,
   jsxs,
   jsxDev,
+  jsxDEV,
   JSX
 }
